@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Aeroplan & Membership Rewards</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,700;1,400&family=Roboto+Mono:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+</head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-56V8CGNZFV"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-56V8CGNZFV');
+</script>
+<body>
+  <!-- Navigation bar -->
+  <header class="header">
+    <!-- Logo -->
+    <a href="apmr.html" class="logo"><img class="logoImage" src="photos/Font Logo.png"></a>
+    <!-- Hamburger icon -->
+    <input class="side-menu" type="checkbox" id="side-menu"/>
+    <label class="hamb" for="side-menu"><span class="hamb-line"></span></label>
+    <!-- Menu -->
+    <nav class="nav">
+        <ul class="menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="apmr.html">Credit Card Comparison</a> </li>
+            <li><a href="american-express-platinum.html">Credit Card Benefit List</a></li>
+        </ul>
+    </nav>
+  </header>
+
+  <div class="pageInfo">
+    <p class="rowOne">Canadian Credit Card Point Bonus Comparison</p>
+    <p class="rowTwo">Aeroplan & Membership Rewards Points</p>
+    <p class="rowThree">These points are desirable as they can be redeemed for a much higher value than their "Approximate Cash Value" if you book a sweetspot flight.</p>
+  </div>
+
+  <div class="buttonCenter">
+    <div class="dropdown">
+        <button class="dropbtn">Select Point Type <i class="fa-solid fa-chevron-down"></i></button>
+        <div class="dropdown-content">
+          <a href="apmr.html">Aeroplan & Membership Rewards</a>
+          <a href="other.html">Other Points</a>
+          <a href="business.html">Business Cards</a>
+        </div>
+    </div>
+  </div>
+
+  <div class="filterContainer">
+    <div class="pointSelector">
+      <label for="point-select">Filter by Point Type:</label>
+      <select id="point-select">
+      <option value="">All Point Types</option>
+      <option value="A La CarteALC">A La Carte</option>
+      <option value="Air MilesAM">Air Miles</option>
+      <option value="Aventura">Aventura</option>
+      <option value="Avion">Avion</option>
+      <option value="Marriott BonvoyMB">Marriott Bonvoy</option>
+      <option value="Cashback">Cashback</option>
+      <option value="HSBC">HSBC</option>
+      <option value="Scene">Scene</option>
+      <option value="TD">TD</option>
+      <option value="Westjet">Westjet</option>
+      </select>
+    </div>
+
+    <div class="bankSelector">
+      <label for="bank-select">Filter by Bank:</label>
+      <select id="bank-select">
+      <option value="">All Banks</option>
+      <option value="Amex">Amex</option>
+      <option value="BMO">BMO</option>
+      <option value="CIBC">CIBC</option>
+      <option value="HSBC">HSBC</option>
+      <option value="RBC">RBC</option>
+      <option value="Scotia">Scotiabank</option>
+      <option value="Tang">Tangerine</option>
+      <option value="TD">TD</option>
+      </select>
+    </div>
+  </div>
+
+<div class="tableWrapper">
+  <table id="card-table">
+    <thead>
+      <th colspan="16">
+        <div class="tableTitle">
+          <div>Aeroplan & Membership Rewards</div>
+          <div><i class="fa-solid fa-plane-departure fa-2xl"></i></div>
+          <div>Credit Card Comparison</div>
+          <div><i class="fa-solid fa-plane-arrival fa-2xl"></i></div>
+          <div><button class="button-32" onClick="window.location.reload();">Refresh Sheet</button></div>
+          <div class="sampleButton">Click to Clear Row --> <div id="tooltipGarbage"><span id="tooltipTexttable">Click here on a row below to delete the card from this sheet</span><span class="garbageButton"><i class="fa-solid fa-trash fa-l"></i></span></div><div> 
+        </div>
+      </th>
+      <tr>
+        <th width="20%" data-sort onclick="sortTable(0, this)">Card (Click Here to Sort)</th>
+        <th data-sort onclick="sortTable(1, this)">Fee</th>
+        <th data-sort onclick="sortTable(2, this)">Point Type</th>
+        <th data-sort onclick="sortTable(3, this)">Total Point Bonus</th>
+        <th data-sort onclick="sortTable(4, this)">Realistic Point Bonus</th>
+        <th data-sort onclick="sortTable(5, this)">Approximate Cash Value</th>
+        <th data-sort onclick="sortTable(6, this)">Bonus Cash Value</th>
+        <th data-sort onclick="sortTable(7, this)">Total Bonus Value Minus Fee</th>
+        <th data-sort onclick="sortTable(8, this)">Minimum Spend Requirement</th>
+        <th data-sort onclick="sortTable(9, this)">MSR Time (In Months)</th>
+        <th data-sort onclick="sortTable(10, this)">Spend Per Month</th>
+        <th data-sort onclick="sortTable(11, this)">Cash Value per Minimum Spend Requirement</th>
+        <th data-sort onclick="sortTable(12, this)">Personal Income</th>
+        <th data-sort onclick="sortTable(13, this)">Bank</th>
+        <th>Perks</th>
+        <th>Offer</th>
+        <th></th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr class="no-data hide">
+        
+      </tr>
+    </tbody>
+    <tbody>
+        <tr>
+            <td class="card-name"><a href="cibc-aventura-visa-infinite.html" target="_blank">CIBC Aventura Visa Infinite</a></td>
+            <td>$0*</td>
+            <td>Aventura</td>
+            <td><div class="hide">10</div>40,000</td>
+            <td><div class="hide">13</div>40,000</td>
+            <td><div class="hide">20</div>$500</td>
+            <td><div class="hide">01</div>$0</td>
+            <td><div class="hide">26</div>$500</td>
+            <td><div class="hide">03</div>$1,000</td>
+            <td><div class="hide">23</div>4</td>
+            <td><div class="hide">03</div>$250</td>
+            <td><div class="hide">01</div>2.00</td>
+            <td><div class="hide">21</div>$60,000</td>
+            <td>CIBC</td>
+            <td><div id="tooltipTable"><span id="tooltipTexttable">4 Lounge Passes, Nexus Credit</span><span id="loungeText">L</span> <span id="creditText">N</span></div></td>
+            <td><a href="https://www.cibc.com/en/special-offers/aventura-rewards-inspire-affiliates.html" target="_blank">Offer</a></td>
+            <td class="del"><span onclick="delRow(this)"><i class="fa-solid fa-trash fa-l"></i></span></td>
+          </tr>
+          <tr>
+            <td class="card-name"><a href="scotia-passport-visa-infinite.html" target="_blank">Scotia Passport Visa</a></td>
+            <td>$0*</td>
+            <td>Scene</td>
+            <td><div class="hide">11</div>40,000</td>
+            <td><div class="hide">10</div>30,000</td>
+            <td><div class="hide">11</div>$300</td>
+            <td><div class="hide">24</div>$100</td>
+            <td><div class="hide">19</div>$400</td>
+            <td><div class="hide">06</div>$1,000</td>
+            <td><div class="hide">05</div>3</td>
+            <td><div class="hide">06</div>$333</td>
+            <td><div class="hide">04</div>1.2</td>
+            <td><div class="hide">24</div>$60,000</td>
+            <td>Scotia</td>
+            <td><div id="tooltipTable"><span id="tooltipTexttable">6 Lounge Passes, No Foreign Exchange Fee</span><span id="loungeText">L</span> <span id="fxText">F</span></div></td>
+            <td><a href="https://www.greatcanadianrebates.ca/details/Scotiabank-Passport-Infinite/" target="_blank">GCR</a></td>
+            <td class="del"><span onclick="delRow(this)"><i class="fa-solid fa-trash fa-l"></i></span></td>
+          </tr>
+          <tr>
+            <td class="card-name"><a href="scotia-american-express-gold.html" target="_blank">Scotia Amex Gold</a></td>
+            <td>$0*</td>
+            <td>Scene</td>
+            <td><div class="hide">14</div>45,000</td>
+            <td><div class="hide">09</div>25,000</td>
+            <td><div class="hide">06</div>$250</td>
+            <td><div class="hide">26</div>$125</td>
+            <td><div class="hide">17</div>$375</td>
+            <td><div class="hide">07</div>$1,000</td>
+            <td><div class="hide">06</div>3</td>
+            <td><div class="hide">07</div>$333</td>
+            <td><div class="hide">05</div>1.13</td>
+            <td><div class="hide">01</div>$0</td>
+            <td>Scotia</td>
+            <td><div id="tooltipTable"><span id="tooltipTexttable">No Foreign Exchange Fee</span><span id="fxText">F</span></div></td>
+            <td><a href="https://www.greatcanadianrebates.ca/details/Scotia-Amex-Gold/" target="_blank">GCR</a></td>
+            <td class="del"><span onclick="delRow(this)"><i class="fa-solid fa-trash fa-l"></i></span></td>
+          </tr>
+          <tr>
+            <td class="card-name"><a href="td-first-class-travel-visa-infinite.html" target="_blank">TD First Class Travel Visa</a></td>
+            <td>$0*</td>
+            <td>TD</td>
+            <td><div class="hide">33</div>145,000</td>
+            <td><div class="hide">32</div>135,000</td>
+            <td><div class="hide">28</div>$675</td>
+            <td><div class="hide">30</div>$175</td>
+            <td><div class="hide">32</div>$850</td>
+            <td><div class="hide">19</div>$5,000</td>
+            <td><div class="hide">25</div>6</td>
+            <td><div class="hide">16</div>$833</td>
+            <td><div class="hide">06</div>1.02</td>
+            <td><div class="hide">25</div>$60,000</td>
+            <td>TD</td>
+            <td></td>
+            <td><a href="https://www.greatcanadianrebates.ca/details/TD-First-Class-Travel-Visa-Infinite/" target="_blank">GCR</a></td>
+            <td class="del"><span onclick="delRow(this)"><i class="fa-solid fa-trash fa-l"></i></span></td>
+          </tr>
+          <tr>
+            <td class="card-name"><a href="american-express-marriott-bonvoy.html" target="_blank">Amex Marriott Bonvoy</a></td>
+            <td>$120</td>
+            <td><div id="tooltipPoint"><span id="tooltipTextpoint">Marriott Bonvoy</span><span id="pointText">MB</span></div></td>
+            <td><div class="hide">17</div>50,000</td>
+            <td><div class="hide">19</div>50,000</td>
+            <td><div class="hide">18</div>$450</td>
+            <td><div class="hide">04</div>$0</td>
+            <td><div class="hide">15</div>$330</td>
+            <td><div class="hide">11</div>$1,500</td>
+            <td><div class="hide">08</div>3</td>
+            <td><div class="hide">11</div>$500</td>
+            <td><div class="hide">09</div>0.66</td>
+            <td><div class="hide">04</div>$0</td>
+            <td>Amex</td>
+            <td><div id="tooltipTablefour"><span id="tooltipTexttable">1 Free Night after 1st year, Improved status at Mariott properties</span><span id="hotelText">H</span></div></td>
+            <td><a href="https://www.greatcanadianrebates.ca/details/Amex-Marriott-Bonvoy/" target="_blank">GCR</a>/Ref</td>
+            <td class="del"><span onclick="delRow(this)"><i class="fa-solid fa-trash fa-l"></i></span></td>
+          </tr>
+          <tr>
+            <td class="card-name"><a href="hsbc-world-elite-mastercard.html" target="_blank">HSBC World Elite Mastercard</a></td>
+            <td>$0*</td>
+            <td>HSBC</td>
+            <td><div class="hide">26</div>80,000</td>
+            <td><div class="hide">28</div>80,000</td>
+            <td><div class="hide">14</div>$400</td>
+            <td><div class="hide">31</div>$225</td>
+            <td><div class="hide">30</div>$625</td>
+            <td><div class="hide">26</div>$6,000</td>
+            <td><div class="hide">27</div>6</td>
+            <td><div class="hide">19</div>$1,000</td>
+            <td><div class="hide">10</div>0.63</td>
+            <td><div class="hide">29</div>$80,000</td>
+            <td>HSBC</td>
+            <td><div id="tooltipTablefour"><span id="tooltipTexttable">No Foreign Exchange Fee, Even better offer for Quebec residents available</span><span id="fxText">F</span></div></td>
+            <td><a href="https://www.greatcanadianrebates.ca/details/HSBC-World-Elite/" target="_blank">GCR</a></td>
+            <td class="del"><span onclick="delRow(this)"><i class="fa-solid fa-trash fa-l"></i></span></td>
+          </tr>
+          <tr>
+            <td class="card-name"><a href="rbc-avion-visa-infinite.html" target="_blank">RBC Avion Visa Infinite</a></td>
+            <td>$120</td>
+            <td>Avion</td>
+            <td><div class="hide">19</div>55,000</td>
+            <td><div class="hide">22</div>55,000</td>
+            <td><div class="hide">23</div>$550</td>
+            <td><div class="hide">22</div>$85</td>
+            <td><div class="hide">27</div>$515</td>
+            <td><div class="hide">20</div>$5,000</td>
+            <td><div class="hide">28</div>6</td>
+            <td><div class="hide">17</div>$833</td>
+            <td><div class="hide">11</div>0.62</td>
+            <td><div class="hide">05</div>$0</td>
+            <td>RBC</td>
+            <td></td>
+            <td><a href="https://creditcardgenius.ca/credit-cards/rbc-avion-visa-infinite" target="_blank">CCG</a></td>
+            <td class="del"><span onclick="delRow(this)"><i class="fa-solid fa-trash fa-l"></i></span></td>
+          </tr>
+          <tr>
+            <td class="card-name"><a href="rbc-avion-visa-platinum.html" target="_blank">RBC Avion Visa Platinum</a></td>
+            <td>$120</td>
+            <td>Avion</td>
+            <td><div class="hide">20</div>55,000</td>
+            <td><div class="hide">23</div>55,000</td>
+            <td><div class="hide">24</div>$550</td>
+            <td><div class="hide">23</div>$85</td>
+            <td><div class="hide">28</div>$515</td>
+            <td><div class="hide">21</div>$5,000</td>
+            <td><div class="hide">29</div>6</td>
+            <td><div class="hide">18</div>$833</td>
+            <td><div class="hide">12</div>0.62</td>
+            <td><div class="hide">06</div>$0</td>
+            <td>RBC</td>
+            <td></td>
+            <td></td>
+            <td class="del"><span onclick="delRow(this)"><i class="fa-solid fa-trash fa-l"></i></span></td>
+          </tr>
+          <tr>
+            <td class="card-name"><a href="scotia-momentum-visa-infinite.html" target="_blank">Scotia Momentum Visa</a></td>
+            <td>$0*</td>
+            <td>Cashback</td>
+            <td><div class="hide">03</div>200</td>
+            <td><div class="hide">03</div>200</td>
+            <td><div class="hide">04</div>$200</td>
+            <td><div class="hide">09</div>$0</td>
+            <td><div class="hide">04</div>$200</td>
+            <td><div class="hide">13</div>$2,000</td>
+            <td><div class="hide">13</div>3</td>
+            <td><div class="hide">15</div>$666</td>
+            <td><div class="hide">19</div>0.30</td>
+            <td><div class="hide">26</div>$60,000</td>
+            <td>Scotia</td>
+            <td><div id="tooltipTablefour"><span id="tooltipTexttable">4% cashback on groceries/subscriptions, 2% cashback on gas/transit</span><span id="cashbackText">C</span></div></td>
+            <td></td>
+            <td class="del"><span onclick="delRow(this)"><i class="fa-solid fa-trash fa-l"></i></span></td>
+          </tr>
+          <tr>
+            <td class="card-name"><a href="https://www.americanexpress.com/ca/en/credit-cards/aeroplan-reserve/" target="_blank">BMO World Elite Air Miles</a></td>
+            <td>$0*</td>
+            <td><div id="tooltipPoint"><span id="tooltipTextpoint">Air Miles</span><span id="pointText">AM</span></div></td>
+            <td><div class="hide">07</div>3,500</td>
+            <td><div class="hide">06</div>2,000</td>
+            <td><div class="hide">08</div>$250</td>
+            <td><div class="hide">12</div>$0</td>
+            <td><div class="hide">07</div>$250</td>
+            <td><div class="hide">16</div>$3,000</td>
+            <td><div class="hide">16</div>3</td>
+            <td><div class="hide">22</div>$1,000</td>
+            <td><div class="hide">23</div>0.25</td>
+            <td><div class="hide">30</div>$80,000</td>
+            <td>BMO</td>
+            <td></td>
+            <td><a href="https://creditcardgenius.ca/offers/bmo-air-miles-world-elite-mastercard" target="_blank">CCG</a></td>
+            <td class="del"><span onclick="delRow(this)"><i class="fa-solid fa-trash fa-l"></i></span></td>
+          </tr>
+          <tr>
+            <td class="card-name"><a href="https://www.bmo.com/main/personal/credit-cards/bmo-eclipse-visa-infinite/" target="_blank">BMO Eclipse Visa Infinite</a></td>
+            <td>$0*</td>
+            <td><div id="tooltipPoint"><span id="tooltipTextpoint">Air Miles</span><span id="pointText">AM</span></div></td>
+            <td><div class="hide">22</div>60,000</td>
+            <td><div class="hide">11</div>30,000</td>
+            <td><div class="hide">05</div>$200</td>
+            <td><div class="hide">20</div>$50</td>
+            <td><div class="hide">08</div>$250</td>
+            <td><div class="hide">17</div>$3,000</td>
+            <td><div class="hide">15</div>3</td>
+            <td><div class="hide">23</div>$1,000</td>
+            <td><div class="hide">22</div>0.25</td>
+            <td><div class="hide">27</div>$60,000</td>
+            <td>BMO</td>
+            <td></td>
+            <td><a href="https://creditcardgenius.ca/credit-cards/bmo-eclipse-visa-infinite" target="_blank">CCG</a></td>
+            <td class="del"><span onclick="delRow(this)"><i class="fa-solid fa-trash fa-l"></i></span></td>
+          </tr>
+          <tr>
+            <td class="card-name"><a href="https://www.td.com/ca/en/personal-banking/products/credit-cards/cash-back/cash-back-visa-infinite-card" target="_blank">TD CashBack Visa Infinite</a></td>
+            <td>$0*</td>
+            <td>Cashback</td>
+            <td><div class="hide">04</div>290</td>
+            <td><div class="hide">05</div>290</td>
+            <td><div class="hide">10</div>$290</td>
+            <td><div class="hide">13</div>$0</td>
+            <td><div class="hide">12</div>$290</td>
+            <td><div class="hide">18</div>$3,500</td>
+            <td><div class="hide">17</div>3</td>
+            <td><div class="hide">27</div>$1,166</td>
+            <td><div class="hide">24</div>0.25</td>
+            <td><div class="hide">14</div>$0</td>
+            <td>TD</td>
+            <td><div id="tooltipTable"><span id="tooltipTexttable">3% cashback on groceries and gas</span><span id="cashbackText">C</span></div></td>
+            <td></td>
+            <td class="del"><span onclick="delRow(this)"><i class="fa-solid fa-trash fa-l"></i></span></td>
+          </tr>
+          <tr>
+            <td class="card-name"><a href="tangerine-mastercard.html" target="_blank">Tangerine Mastercard</a></td>
+            <td>$0*</td>
+            <td>Cashback</td>
+            <td><div class="hide">02</div>100</td>
+            <td><div class="hide">02</div>100</td>
+            <td><div class="hide">02</div>$100</td>
+            <td><div class="hide">15</div>$0</td>
+            <td><div class="hide">02</div>$100</td>
+            <td><div class="hide">10</div>$1,000</td>
+            <td><div class="hide">03</div>2</td>
+            <td><div class="hide">14</div>$500</td>
+            <td><div class="hide">27</div>0.20</td>
+            <td><div class="hide">28</div>$60,000</td>
+            <td>Tang</td>
+            <td></td>
+            <td><a href="https://www.greatcanadianrebates.ca/details/Tangerine-Money-Back-Credit-Card/" target="_blank">GCR</a></td>
+            <td class="del"><span onclick="delRow(this)"><i class="fa-solid fa-trash fa-l"></i></span></td>
+          </tr>
+          <tr>
+            <td class="card-name"><a href="https://www.rbcroyalbank.com/credit-cards/travel/rbc-british-airways-visa-infinite.html" target="_blank">RBC British Airways Visa</a></td>
+            <td>$165</td>
+            <td>Avios</td>
+            <td><div class="hide">24</div>60,000</td>
+            <td><div class="hide">21</div>50,000</td>
+            <td><div class="hide">22</div>$500</td>
+            <td><div class="hide">17</div>$0</td>
+            <td><div class="hide">16</div>$335</td>
+            <td><div class="hide">30</div>$6,000</td>
+            <td><div class="hide">21</div>3</td>
+            <td><div class="hide">31</div>$2,000</td>
+            <td><div class="hide">29</div>0.17</td>
+            <td><div class="hide">18</div>$0</td>
+            <td>RBC</td>
+            <td><div id="tooltipTablefour"><span id="tooltipTexttable">Doordash Dashpass free for 12 months, Save 3 cents per L at Petro Canada</span><span id="cashbackText">C</span></div></td>
+            <td></td>
+            <td class="del"><span onclick="delRow(this)"><i class="fa-solid fa-trash fa-l"></i></span></td>
+          </tr>
+          <tr>
+            <td class="card-name"><a href="rbc-westjet-world-elite-mastercard.html" target="_blank">Westjet RBC WE Mastercard</a></td>
+            <td>$0*</td>
+            <td>Westjet</td>
+            <td><div class="hide">05</div>450</td>
+            <td><div class="hide">04</div>250</td>
+            <td><div class="hide">09</div>$250</td>
+            <td><div class="hide">18</div>$0</td>
+            <td><div class="hide">09</div>$250</td>
+            <td><div class="hide">01</div>$0</td>
+            <td><div class="hide">01</div>0</td>
+            <td><div class="hide">01</div>$0</td>
+            <td><div class="hide">31</div>0</td>
+            <td><div class="hide">31</div>$80,000</td>
+            <td>RBC</td>
+            <td><div id="tooltipTablefour"><span id="tooltipTexttable">Free 1st Checked Bag for 8 on WestJet, Annual Companion Voucher</span><span id="bagText">B</span> <span id="voucherText">V</span></div></td>
+            <td></td>
+            <td class="del"><span onclick="delRow(this)"><i class="fa-solid fa-trash fa-l"></i></span></td>
+          </tr>
+          <tr>
+            <td class="card-name"><a href="national-bank-world-elite-mastercard.html" target="_blank">National Bank WE Mastercard</a></td>
+            <td>$0*</td>
+            <td><div id="tooltipPoint"><span id="tooltipTextpoint">A La Carte</span><span id="pointText">ALC</span></div></td>
+            <td><div class="hide">01</div>0</td>
+            <td><div class="hide">01</div>0</td>
+            <td><div class="hide">01</div>$0</td>
+            <td><div class="hide">19</div>$0</td>
+            <td><div class="hide">01</div>$0</td>
+            <td><div class="hide">02</div>$0</td>
+            <td><div class="hide">02</div>0</td>
+            <td><div class="hide">02</div>$0</td>
+            <td><div class="hide">32</div>0</td>
+            <td><div class="hide">32</div>$80,000</td>
+            <td>NB</td>
+            <td><div id="tooltipTablefour"><span id="tooltipTexttable">Montreal Lounge Access, Excellent trip insurance when using points</span><span id="loungeText">L</span> <span id="insuranceText">I</span></div></td>
+            <td><a href="https://creditcardgenius.ca/offers/national-bank-world-elite-mastercard" target="_blank">CCG</a></td>
+            <td class="del"><span onclick="delRow(this)"><i class="fa-solid fa-trash fa-l"></i></span></td>
+          </tr>
+    </tbody>
+  </table>
+</div>
+
+
+  <p class="footerTwo">Notes</p>
+  
+  <div class="infoLargecontainer">
+    <div class="infoContainer">
+      <div class="infoIcon"><i class="fa-solid fa-circle-exclamation fa-2xl"></i></div>
+      <div class="infoTitle">Not Financial Advice</div>
+      <div class="infoParagraph">This website is not financial advice and may not have up-to-date information. Please do your own reserach.</div>
+    </div>
+
+    <div class="infoContainer">
+      <div class="infoIcon"><i class="fa-solid fa-money-bill fa-2xl"></i></div>
+      <div class="infoTitle">Bonus Cash Value</div>
+      <div class="infoParagraph">"Bonus Cash Value" calculates non point bonuses like rebates, cashback, credits, and other cash equivelants that do not come to you as points.</div>
+    </div>
+
+    <div class="infoContainer">
+      <div class="infoIcon"><i class="fa-solid fa-minimize fa-2xl"></i></div>
+      <div class="infoTitle">Cash Value per M.S.R.</div>
+      <div class="infoParagraph">"Cash Value per Minimum Spend Requirement" shows the most amount of value you get per dollar spend (the higher the better)</div>
+    </div>
+
+    <div class="infoContainer">
+      <div class="infoIcon"><i class="fa-solid fa-brain fa-2xl"></i></div>
+      <div class="infoTitle">Assumptions</div>
+      <div class="infoParagraph">This chart assumes you want to spend the least amount of money to earn the most amount of points. It ignores the value of lounge visits, exclusive offers, companion passes, etc.
+
+      </div>
+    </div>
+
+    <div class="infoContainer">
+      <div class="infoIcon"><i class="fa-solid fa-asterisk fa-2xl"></i></div>
+      <div class="infoTitle">First Year Free</div>
+      <div class="infoParagraph">* means first year free. After your first year there is likely an annual fee. In almost all cases you can cancel the card before the second year annual fee.</div>
+    </div>
+  </div>
+
+</body>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+$(document).ready(function() {
+  $('#bank-select, #point-select').change(function() {
+    var bankFilter = $('#bank-select').val();
+    var pointFilter = $('#point-select').val();
+    $('#card-table tbody tr').hide();
+    $('#card-table tbody tr').each(function() {
+      var bankValue = $(this).find('td:nth-child(14)').text();
+      var pointValue = $(this).find('td:nth-child(3)').text();
+      if ((bankFilter == '' || bankFilter == bankValue) && (pointFilter == '' || pointFilter == pointValue)) {
+        $(this).show();
+      }
+    });
+  });
+});
+</script>
+
+<script>
+  function sortTable (n, evt) {
+    var table = document.querySelector('table'),
+        thead = document.querySelector('thead'),
+        tbody = table.querySelectorAll('tbody')[1],
+        bRows = [...tbody.rows],
+        hData = [...thead.querySelectorAll('th')],
+        desc = false;
+        
+      hData.map ( (head) => {
+        if ( head != evt ) {
+            head.classList.remove('asc', 'desc');
+        }
+      } );
+      
+      desc = evt.classList.contains ( 'asc' ) ? true : false;
+      evt.classList[desc ? 'remove' : 'add']('asc');
+      evt.classList[desc ? 'add' : 'remove']('desc');
+
+      tbody.innerHTML = '';
+
+        bRows.sort( (a, b) => {
+          let x = a.getElementsByTagName('td')[n].innerHTML.toLowerCase(),
+              y = b.getElementsByTagName('td')[n].innerHTML.toLowerCase();
+          return desc ? (x < y ? 1 : -1) : (x < y ? -1 : 1);
+        } );
+        bRows.map ( (bRow) => {
+            tbody.appendChild(bRow);
+        } )
+  }
+
+  function delRow ($this) {
+    var table = document.querySelector('table'),
+      tbody = document.querySelectorAll('tbody')[1],
+      index = [...tbody.children].indexOf($this.parentElement.parentElement);
+      
+    $this.parentElement.parentElement.classList.add('remove');
+    setTimeout( () => {
+        tbody.deleteRow(index);
+        document.querySelector('.no-data').classList[[...tbody.children].length == 0 ? 'remove' : 'add']('hide');
+    }, 900);
+  }
+</script>
+
+</html>
