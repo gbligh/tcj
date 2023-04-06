@@ -65,14 +65,14 @@ height: 80px;
 width: 100%;
 height: 100%;
 position: fixed;
-background-color: var(--black);
+background-color: var(--gray);
 overflow: hidden;
 }
 
 .menu a{
 display: block;
 padding: 30px;
-color: var(--white);
+color: var(--black);
 }
 .menu a:hover{
 background-color: var(--gray);
