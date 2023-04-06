@@ -72,7 +72,7 @@ overflow: hidden;
 .menu a{
 display: block;
 padding: 30px;
-color: var(--black);
+color: var(--white);
 }
 .menu a:hover{
 background-color: var(--gray);
@@ -90,7 +90,7 @@ padding: 40px 20px;
 }/* Style label tag */
 
 .hamb-line {
-background: var(--white);
+background: var(--black);
 display: block;
 height: 2px;
 position: relative;
@@ -100,7 +100,7 @@ width: 24px;
 
 .hamb-line::before,
 .hamb-line::after{
-background: var(--white);
+background: var(--black);
 content: '';
 display: block;
 height: 100%;
