@@ -1590,6 +1590,7 @@ grid-row-end: 6;
 .filterContainer {
   background-color: none; 
   padding-left: 20px;
+  padding-bottom: 10px;
 }
 
 .pointSelector {
