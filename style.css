@@ -1658,3 +1658,8 @@ grid-row-end: 6;
 .buttonSpacer {
   padding-bottom: 40px;
 }
+
+.updateTextcard {
+  display: flex;
+  justify-content: center;
+}
