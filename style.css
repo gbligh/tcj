@@ -678,6 +678,12 @@ background-color: rgb(236, 236, 236);
 .button-6 {
   display: none;
 }
+  
+.updateText {
+  display: flex;
+  justify-content: right;
+  padding-right: 20px;
+}  
 }
 
 @media (max-width: 768px) {
@@ -1106,6 +1112,11 @@ grid-column-end: 4;
   box-shadow: rgba(0, 0, 0, 0.06) 0 2px 4px;
   color: rgba(0, 0, 0, 0.65);
   transform: translateY(0);
+} 
+  
+.updateText {
+  display: flex;
+  justify-content: center;
 }  
   
 }
