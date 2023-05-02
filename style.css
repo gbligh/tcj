@@ -1202,6 +1202,10 @@ table th[data-sort] {
 padding: 8px 12px;
 }
 
+table th[data-sort-opt] {
+padding: 8px 12px;
+}
+
 table th.asc,
 table th.desc {
   color: yellow;
@@ -1218,6 +1222,17 @@ opacity: 0.3;
 border: 4px solid transparent;
 }
 
+table th[data-sort-opt]:before, 
+table th[data-sort-opt]:after  {
+content: '';
+position: absolute;
+height: 0;
+width: 0;
+right: 0;
+opacity: 0.3;
+border: 4px solid transparent;
+}
+
 table th[data-sort]:before {
 top: 43px;
 border-bottom-color: yellow;
@@ -1225,6 +1240,16 @@ border-bottom-color: yellow;
 
 table th[data-sort]:after  {
 top: 53px;
+border-top-color: yellow;
+}
+
+table th[data-sort-opt]:before {
+top: 16px;
+border-bottom-color: yellow;
+} 
+    
+table th[data-sort-opt]:after  {
+top: 26px;
 border-top-color: yellow;
 }
 
