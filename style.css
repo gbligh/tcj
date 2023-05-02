@@ -1789,15 +1789,77 @@ grid-row-end: 6;
     margin: 20px 0;
   }
   
-  @media (max-width: 768px) {
+ @media (max-width: 768px) {
     .ccInfoWrapperlist {
       width: 100%;
     }
+
+    table th[data-sort-opt]:before {
+      top: 32px;
+      border-bottom-color: yellow;
+      } 
+          
+      table th[data-sort-opt]:after  {
+      top: 42px;
+      border-top-color: yellow;
+      }
   }
 
   .ccWrapperlist:hover {
     opacity: .7;
     transition: all 0.6s ease;
     }
+  
+  .gradientOne {
+    background-color: #02ff06;
+  }
+
+  .gradientTwo {
+    background-color: #62f200;
+  }
+
+  .gradientThree {
+    background-color: #86e400;
+  }
+
+  .gradientFour {
+    background-color: #a0d600;
+  }
+
+  .gradientFive {
+    background-color: #b6c700;
+  }
+
+  .gradientSix {
+    background-color: #c7b700;
+  }
+
+  .gradientSeven {
+    background-color: #d6a700;
+  }
+
+  .gradientEight {
+    background-color: #e39500;
+  }
+
+  .gradientNine {
+    background-color: #ed8200;
+  }
+
+  .gradientTen {
+    background-color: #f56d00;
+  }
+
+  .gradientEleven {
+    background-color: #fb5600;
+  }
+
+  .gradientTwelve {
+    background-color: #fe3a00;
+  }
+  
+  .gradientThirteen {
+    background-color: #ff0000;
+  }
   
   
