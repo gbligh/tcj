@@ -1899,4 +1899,8 @@ grid-row-end: 6;
     background-color: #ff0000;
   }
   
+  .hometoolHeader, .hometoolFooter {
+    color: black;
+  }
+
   
