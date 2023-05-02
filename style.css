@@ -1832,6 +1832,14 @@ grid-row-end: 6;
       top: 42px;
       border-top-color: yellow;
       }
+	 
+    .ccImagelist {
+      width: 75%;
+      height: auto;
+      object-fit: contain;
+      border-radius: 8px;
+      box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    }
   }
 
   .ccWrapperlist:hover {
