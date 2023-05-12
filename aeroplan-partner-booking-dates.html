@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Aeroplan & Membership Rewards</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,700;1,400&family=Roboto+Mono:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+</head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-56V8CGNZFV"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-56V8CGNZFV');
+</script>
+<body>
+  <!-- Navigation bar -->
+  <header class="header">
+    <!-- Logo -->
+    <a href="apmr.html" class="logo"><img class="logoImage" src="photos/Font Logo.png"></a>
+    <!-- Hamburger icon -->
+    <input class="side-menu" type="checkbox" id="side-menu"/>
+    <label class="hamb" for="side-menu"><span class="hamb-line"></span></label>
+    <!-- Menu -->
+    <nav class="nav">
+        <ul class="menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="apmr.html">Credit Card Comparison</a> </li>
+            <li><a href="american-express-platinum.html">Credit Card Benefit List</a></li>
+        </ul>
+    </nav>
+  </header>
+
+  <div class="pageInfo">
+    <p class="rowOne">Canadian Credit Card Point Flight Information</p>
+    <p class="rowTwo">Aeroplan Partner Award Seat Release Dates</p>
+    <p class="rowThree">Use the table below to see when Aeroplan point partners release their award seats.</p>
+  </div>
+
+<div class="tableWrapper">
+  <table id="airline-table">
+    <thead>
+      <th colspan="16">
+        <div class="tableTitle">
+            <div><i class="fa-solid fa-plane-departure fa-2xl"></i></div>
+          <div>Aeroplan Partner Award Seat Release Date</div>
+          <div><i class="fa-solid fa-plane-arrival fa-2xl"></i></div>
+        </div>
+      </th>
+      <tr>
+        <th data-sort onclick="sortTable(0, this)">Airline (Click Here to Sort)</th>
+        <th data-sort onclick="sortTable(2, this)">Release Timeframe (Click Here to Sort)</th>
+        <th>Current Release Date</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr class="no-data hide"></tr>
+    </tbody>
+    <tbody>
+        <tr>
+            <td class="airlineWhite"><div><img class="airlineImage" src="logos/Aegan.jpeg"></div>Aegean Airlines</td>
+            <td class="airlineWhite">250 Days Out</td>
+            <td class="airlineWhite" id="date1"></td>
+        </tr>                                 
+        <tr>
+            <td class="airlineWhite"><div><img class="airlineImage" src="logos/Air-canada.png"></div>Air Canada</td>
+            <td class="airlineWhite">355 Days Out</td>
+            <td class="airlineWhite" id="date2"></td>
+        </tr>
+        <tr>
+            <td class="airlineWhite"><div><img class="airlineImage" src="logos/Air-China.png"></div>Air China</td>
+            <td class="airlineWhite">355 Days Out</td>
+            <td class="airlineWhite" id="date3"></td>
+        </tr>
+        <tr>
+            <td class="airlineWhite"><div><img class="airlineImage" src="logos/Air-India.jpg"></div>Air India</td>
+            <td class="airlineWhite">331 Days Out</td>
+            <td class="airlineWhite" id="date4"></td>
+        </tr>
+        <tr>
+            <td class="airlineWhite"><div><img class="airlineImage" src="logos/Air-New-Zealand-Logo.jpg"></div>Air New Zealand</td>
+            <td class="airlineWhite">350 Days Out</td>
+            <td class="airlineWhite" id="date5"></td>
+          </tr>
+          <tr>
+            <td class="airlineWhite"><div><img class="airlineImage" src="logos/ANA.jpg"></div>All Nippon Airways (ANA)</td>
+            <td class="airlineWhite">355 Days Out</td>
+            <td class="airlineWhite" id="date6"></td>
+          </tr>
+          <tr>
+            <td class="airlineWhite"><div><img class="airlineImage" src="logos/Asiana-Airlines.png"></div>Asiana Airlines</td>
+            <td class="airlineWhite">361 Days Out</td>
+            <td class="airlineWhite" id="date7"></td>
+          </tr>
+          <tr>
+            <td class="airlineWhite"><div><img class="airlineImage" src="logos/Austrian-Airlines.png"></div>Austrian Airlines</td>
+            <td class="airlineWhite">355 Days Out</td>
+            <td class="airlineWhite" id="date8"></td>
+          </tr>
+          <tr>
+            <td class="airlineWhite"><div><img class="airlineImage" src="logos/Avianca.png"></div>Avianca</td>
+            <td class="airlineWhite">360 Days Out</td>
+            <td class="airlineWhite" id="date9"></td>
+          </tr>
+          <tr>
+            <td class="airlineWhite"><div><img class="airlineImage" src="logos/Azul.png"></div>Azul</td>
+            <td class="airlineWhite">330 Days Out</td>
+            <td class="airlineWhite" id="date10"></td>
+          </tr>
+          <tr>
+            <td class="airlineWhite"><div><img class="airlineImage" src="logos/Brussels.png"></div>Brussels Airlines</td>
+            <td class="airlineWhite">360 Days Out</td>
+            <td class="airlineWhite" id="date11"></td>
+          </tr>
+          <tr>
+            <td class="airlineWhite"><div><img class="airlineImage" src="logos/Copa.png"></div>Copa Airlines</td>
+            <td class="airlineWhite">330 Days Out</td>
+            <td class="airlineWhite" id="date12"></td>
+          </tr>
+          <tr>
+            <td class="airlineWhite"><div><img class="airlineImage" src="logos/Croatia-Airlines.png"></div>Croatia Airlines</td>
+            <td class="airlineWhite">355 Days Out</td>
+            <td class="airlineWhite" id="date13"></td>
+          </tr> 
+          <tr>
+            <td class="airlineWhite"><div><img class="airlineImage" src="logos/EGYPTAIR.png"></div>EGYPTAIR</td>
+            <td class="airlineWhite">355 Days Out</td>
+            <td class="airlineWhite" id="date14"></td>
+          </tr> 
+          <tr>
+            <td class="airlineWhite"><div><img class="airlineImage" src="logos/Emirates.png"></div>Emirates</td>
+            <td class="airlineWhite">331 Days Out</td>
+            <td class="airlineWhite" id="date15"></td>
+          </tr>  
+          <tr>
+            <td class="airlineWhite"><div><img class="airlineImage" src="logos/Ethiopian.jpg"></div>Ethiopian Airlines</td>
+            <td class="airlineWhite">328 Days Out</td>
+            <td class="airlineWhite" id="date16"></td>
+          </tr> 
+          <tr>
+            <td class="airlineWhite"><div><img class="airlineImage" src="logos/Etihad.png"></div>Etihad Airways</td>
+            <td class="airlineWhite">330 Days Out</td>
+            <td class="airlineWhite" id="date17"></td>
+          </tr> 
+          <tr>
+            <td class="airlineWhite"><div><img class="airlineImage" src="logos/EVA-Air.png"></div>EVA Air</td>
+            <td class="airlineWhite">360 Days Out</td>
+            <td class="airlineWhite" id="date18"></td>
+          </tr> 
+          <tr>
+            <td class="airlineWhite"><div><img class="airlineImage" src="logos/Fiji-Airways.jpg"></div>Fiji Airways</td>
+            <td class="airlineWhite">351 Days Out</td>
+            <td class="airlineWhite" id="date19"></td>
+          </tr>
+          <tr>
+            <td class="airlineWhite"><div><img class="airlineImage" src="logos/LOT-Polish.png"></div>LOT Polish Airlines</td>
+            <td class="airlineWhite">355 Days Out</td>
+            <td class="airlineWhite" id="date20"></td>
+          </tr> 
+          <tr>
+            <td class="airlineWhite"><div><img class="airlineImage" src="logos/Lufthansa.jpg"></div>Lufthansa</td>
+            <td class="airlineWhite">360 Days Out</td>
+            <td class="airlineWhite" id="date21"></td>
+          </tr> 
+          <tr>
+            <td class="airlineWhite"><div><img class="airlineImage" src="logos/SAS.png"></div>SAS</td>
+            <td class="airlineWhite">330 Days Out</td>
+            <td class="airlineWhite" id="date22"></td>
+          </tr>
+          <tr>
+            <td class="airlineWhite"><div><img class="airlineImage" src="logos/Shenzhen.png"></div>Shenzhen Airlines</td>
+            <td class="airlineWhite">361 Days Out</td>
+            <td class="airlineWhite" id="date23"></td>
+          </tr>
+          <tr>
+            <td class="airlineWhite"><div><img class="airlineImage" src="logos/Singapore.png"></div>Singapore Airlines</td>
+            <td class="airlineWhite">355 Days Out</td>
+            <td class="airlineWhite" id="date24"></td>
+          </tr>
+          <tr>
+            <td class="airlineWhite"><div><img class="airlineImage" src="logos/SWISS-Airlines.png"></div>SWISS</td>
+            <td class="airlineWhite">300 Days Out</td>
+            <td class="airlineWhite" id="date25"></td>
+          </tr>
+          <tr>
+            <td class="airlineWhite"><div><img class="airlineImage" src="logos/TAP-Portugal.png"></div>TAP Air Portugal</td>
+            <td class="airlineWhite">360 Days Out</td>
+            <td class="airlineWhite" id="date26"></td>
+          </tr>
+          <tr>
+            <td class="airlineWhite"><div><img class="airlineImage" src="logos/Thai-Airways.png"></div>Thai Airways</td>
+            <td class="airlineWhite">340 Days Out</td>
+            <td class="airlineWhite" id="date27"></td>
+          </tr>
+          <tr>
+            <td class="airlineWhite"><div><img class="airlineImage" src="logos/Turkish-Airlines.png"></div>Turkish Airlines</td>
+            <td class="airlineWhite">356 Days Out</td>
+            <td class="airlineWhite" id="date28"></td>
+          </tr>
+          <tr>
+            <td class="airlineWhite"><div><img class="airlineImage" src="logos/United-Airlines.png"></div>United Airlines</td>
+            <td class="airlineWhite">337 Days Out</td>
+            <td class="airlineWhite" id="date29"></td>
+          </tr>  
+          <tr>
+            <td class="airlineWhite"><div><img class="airlineImage" src="logos/Virgin-Australia.png"></div>Virgin Australia</td>
+            <td class="airlineWhite">330 Days Out</td>
+            <td class="airlineWhite" id="date30"></td>
+          </tr>            
+    </tbody>
+  </table>
+</div>
+
+  <p class="footerTwo">Notes</p>
+  
+  <div class="infoLargecontainer">
+    <div class="infoContainer">
+      <div class="infoIcon"><i class="fa-solid fa-circle-exclamation fa-2xl"></i></div>
+      <div class="infoTitle">Not Financial Advice</div>
+      <div class="infoParagraph">This website is not financial advice and may not have up-to-date information. Please do your own reserach.</div>
+    </div>
+
+</body>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+<script>
+// Get the elements with the IDs "date1", "date2", "date3", and "date4"
+const date1Element = document.getElementById("date1");
+const date2Element = document.getElementById("date2");
+const date3Element = document.getElementById("date3");
+const date4Element = document.getElementById("date4");
+const date5Element = document.getElementById("date5");
+const date6Element = document.getElementById("date6");
+const date7Element = document.getElementById("date7");
+const date8Element = document.getElementById("date8");
+const date9Element = document.getElementById("date9");
+const date10Element = document.getElementById("date10");
+const date11Element = document.getElementById("date11");
+const date12Element = document.getElementById("date12");
+const date13Element = document.getElementById("date13");
+const date14Element = document.getElementById("date14");
+const date15Element = document.getElementById("date15");
+const date16Element = document.getElementById("date16");
+const date17Element = document.getElementById("date17");
+const date18Element = document.getElementById("date18");
+const date19Element = document.getElementById("date19");
+const date20Element = document.getElementById("date20");
+const date21Element = document.getElementById("date21");
+const date22Element = document.getElementById("date22");
+const date23Element = document.getElementById("date23");
+const date24Element = document.getElementById("date24");
+const date25Element = document.getElementById("date25");
+const date26Element = document.getElementById("date26");
+const date27Element = document.getElementById("date27");
+const date28Element = document.getElementById("date28");
+const date29Element = document.getElementById("date29");
+const date30Element = document.getElementById("date30");
+
+// Update the dates immediately
+updateDates();
+
+// Update the dates every day
+setInterval(updateDates, 24 * 60 * 60 * 1000);
+
+function updateDates() {
+// Set the date for Airline 1
+const futureDate1 = new Date();
+futureDate1.setDate(futureDate1.getDate() + 250);
+
+// Set the date for Airline 2
+const futureDate2 = new Date();
+futureDate2.setDate(futureDate2.getDate() + 355);
+
+// Set the date for Airline 3
+const futureDate3 = new Date();
+futureDate3.setDate(futureDate3.getDate() + 355);
+
+// Set the date for Airline 4
+const futureDate4 = new Date();
+futureDate4.setDate(futureDate4.getDate() + 331);
+
+// Set the date for Airline 5
+const futureDate5 = new Date();
+futureDate5.setDate(futureDate5.getDate() + 350);
+
+// Set the date for Airline 6
+const futureDate6 = new Date();
+futureDate6.setDate(futureDate6.getDate() + 355);
+
+// Set the date for Airline 7
+const futureDate7 = new Date();
+futureDate7.setDate(futureDate7.getDate() + 361);
+
+// Set the date for Airline 8
+const futureDate8 = new Date();
+futureDate8.setDate(futureDate8.getDate() + 355);
+
+// Set the date for Airline 9
+const futureDate9 = new Date();
+futureDate9.setDate(futureDate9.getDate() + 360);
+
+// Set the date for Airline 10
+const futureDate10 = new Date();
+futureDate10.setDate(futureDate10.getDate() + 330);
+
+// Set the date for Airline 11
+const futureDate11 = new Date();
+futureDate11.setDate(futureDate11.getDate() + 360);
+
+// Set the date for Airline 12
+const futureDate12 = new Date();
+futureDate12.setDate(futureDate12.getDate() + 330);
+
+// Set the date for Airline 13
+const futureDate13 = new Date();
+futureDate13.setDate(futureDate13.getDate() + 355);
+
+// Set the date for Airline 14
+const futureDate14 = new Date();
+futureDate14.setDate(futureDate14.getDate() + 355);
+
+// Set the date for Airline 15
+const futureDate15 = new Date();
+futureDate15.setDate(futureDate15.getDate() + 331);
+
+// Set the date for Airline 16
+const futureDate16 = new Date();
+futureDate16.setDate(futureDate16.getDate() + 328);
+
+// Set the date for Airline 17
+const futureDate17 = new Date();
+futureDate17.setDate(futureDate17.getDate() + 330);
+
+// Set the date for Airline 18
+const futureDate18 = new Date();
+futureDate18.setDate(futureDate18.getDate() + 360);
+
+// Set the date for Airline 19
+const futureDate19 = new Date();
+futureDate19.setDate(futureDate19.getDate() + 351);
+
+// Set the date for Airline 20
+const futureDate20 = new Date();
+futureDate20.setDate(futureDate20.getDate() + 355);
+
+// Set the date for Airline 21
+const futureDate21 = new Date();
+futureDate21.setDate(futureDate21.getDate() + 360);
+
+// Set the date for Airline 22
+const futureDate22 = new Date();
+futureDate22.setDate(futureDate22.getDate() + 330);
+
+// Set the date for Airline 23
+const futureDate23 = new Date();
+futureDate23.setDate(futureDate23.getDate() + 361);
+
+// Set the date for Airline 24
+const futureDate24 = new Date();
+futureDate24.setDate(futureDate24.getDate() + 355);
+
+// Set the date for Airline 25
+const futureDate25 = new Date();
+futureDate25.setDate(futureDate25.getDate() + 300);
+
+// Set the date for Airline 26
+const futureDate26 = new Date();
+futureDate26.setDate(futureDate26.getDate() + 360);
+
+// Set the date for Airline 27
+const futureDate27 = new Date();
+futureDate27.setDate(futureDate27.getDate() + 340);
+
+// Set the date for Airline 28
+const futureDate28 = new Date();
+futureDate28.setDate(futureDate28.getDate() + 356);
+
+// Set the date for Airline 29
+const futureDate29 = new Date();
+futureDate29.setDate(futureDate29.getDate() + 337);
+
+// Set the date for Airline 29
+const futureDate30 = new Date();
+futureDate30.setDate(futureDate30.getDate() + 330);
+
+  // Set the text of each date element to the formatted date
+  date1Element.textContent = futureDate1.toLocaleDateString();
+  date2Element.textContent = futureDate2.toLocaleDateString();
+  date3Element.textContent = futureDate3.toLocaleDateString();
+  date4Element.textContent = futureDate4.toLocaleDateString();
+  date5Element.textContent = futureDate5.toLocaleDateString();
+  date6Element.textContent = futureDate6.toLocaleDateString();
+  date7Element.textContent = futureDate7.toLocaleDateString();
+  date8Element.textContent = futureDate8.toLocaleDateString();
+  date9Element.textContent = futureDate9.toLocaleDateString();
+  date10Element.textContent = futureDate10.toLocaleDateString();
+  date11Element.textContent = futureDate11.toLocaleDateString();
+  date12Element.textContent = futureDate12.toLocaleDateString();
+  date13Element.textContent = futureDate13.toLocaleDateString();
+  date14Element.textContent = futureDate14.toLocaleDateString();
+  date15Element.textContent = futureDate15.toLocaleDateString();
+  date16Element.textContent = futureDate16.toLocaleDateString();
+  date17Element.textContent = futureDate17.toLocaleDateString();
+  date18Element.textContent = futureDate18.toLocaleDateString();
+  date19Element.textContent = futureDate19.toLocaleDateString();
+  date20Element.textContent = futureDate20.toLocaleDateString();
+  date21Element.textContent = futureDate21.toLocaleDateString();
+  date22Element.textContent = futureDate22.toLocaleDateString();
+  date23Element.textContent = futureDate23.toLocaleDateString();
+  date24Element.textContent = futureDate24.toLocaleDateString();
+  date25Element.textContent = futureDate25.toLocaleDateString();
+  date26Element.textContent = futureDate26.toLocaleDateString();
+  date27Element.textContent = futureDate27.toLocaleDateString();
+  date28Element.textContent = futureDate28.toLocaleDateString();
+  date29Element.textContent = futureDate29.toLocaleDateString();
+  date30Element.textContent = futureDate30.toLocaleDateString();
+}
+</script>
+
+<script>
+$(document).ready(function() {
+  $('#bank-select, #point-select').change(function() {
+    var bankFilter = $('#bank-select').val();
+    var pointFilter = $('#point-select').val();
+    $('#card-table tbody tr').hide();
+    $('#card-table tbody tr').each(function() {
+      var bankValue = $(this).find('td:nth-child(14)').text();
+      var pointValue = $(this).find('td:nth-child(3)').text();
+      if ((bankFilter == '' || bankFilter == bankValue) && (pointFilter == '' || pointFilter == pointValue)) {
+        $(this).show();
+      }
+    });
+  });
+});
+</script>
+
+<script>
+  function sortTable (n, evt) {
+    var table = document.querySelector('table'),
+        thead = document.querySelector('thead'),
+        tbody = table.querySelectorAll('tbody')[1],
+        bRows = [...tbody.rows],
+        hData = [...thead.querySelectorAll('th')],
+        desc = false;
+        
+      hData.map ( (head) => {
+        if ( head != evt ) {
+            head.classList.remove('asc', 'desc');
+        }
+      } );
+      
+      desc = evt.classList.contains ( 'asc' ) ? true : false;
+      evt.classList[desc ? 'remove' : 'add']('asc');
+      evt.classList[desc ? 'add' : 'remove']('desc');
+
+      tbody.innerHTML = '';
+
+        bRows.sort( (a, b) => {
+          let x = a.getElementsByTagName('td')[n].innerHTML.toLowerCase(),
+              y = b.getElementsByTagName('td')[n].innerHTML.toLowerCase();
+          return desc ? (x < y ? 1 : -1) : (x < y ? -1 : 1);
+        } );
+        bRows.map ( (bRow) => {
+            tbody.appendChild(bRow);
+        } )
+  }
+
+  function delRow ($this) {
+    var table = document.querySelector('table'),
+      tbody = document.querySelectorAll('tbody')[1],
+      index = [...tbody.children].indexOf($this.parentElement.parentElement);
+      
+    $this.parentElement.parentElement.classList.add('remove');
+    setTimeout( () => {
+        tbody.deleteRow(index);
+        document.querySelector('.no-data').classList[[...tbody.children].length == 0 ? 'remove' : 'add']('hide');
+    }, 900);
+  }
+</script>
+
+</html>
