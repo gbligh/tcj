@@ -60,6 +60,10 @@ transition: all 0.6s ease;
 height: 80px;
 }
 
+.airlineImage {
+  height: 20px;
+}
+
 /* Nav menu */
 .nav{
 width: 100%;
@@ -2033,5 +2037,10 @@ flex: 1 0px;
 .footer__nav {
 flex: 2 0px;
 }
+}
+
+.airlineWhite {
+background-color: white;
+color: black;
 }
 
