@@ -158,36 +158,6 @@ padding: 0;
 overflow: hidden;
 transition: all linear 0.3s;
 }	
-	
-.nav{
-    max-height: none;
-    top: 0;
-    position: relative;
-    float: right;
-    width: fit-content;
-    background-color: transparent;
-}
-.menu li{
-    float: left;
-}
-.menu a:hover{
-    background-color: transparent;
-    color: var(--gray);
-}
-
-.hamb{
-    display: none;
-}
-
-.subnav-content {
-  padding: 20px 0 ;
-  display: none;
-  background-color:  var(--black);
-}
-
-.subnav-content a {
-    color: white;
-}
 
 .rowOne {
   color: brown;
@@ -711,12 +681,6 @@ background-color: rgb(236, 236, 236);
 @media (max-width: 768px) {
 table td.del {
 display: none;
-}
-
-.nav{
-  width: fit-content;
-  width: 100%;
-  height: 100%;
 }
 
 .rowOne {
@@ -2042,5 +2006,47 @@ flex: 2 0px;
 .airlineWhite {
 background-color: white;
 color: black;
+}
+
+@media (min-width: 1400px) {
+  
+  .nav{
+      max-height: none;
+      top: 0;
+      position: relative;
+      float: right;
+      width: fit-content;
+      background-color: transparent;
+  }
+
+  .menu li{
+      float: left;
+  }
+  .menu a:hover{
+      background-color: transparent;
+      color: var(--gray);
+  }
+  
+  .hamb{
+      display: none;
+  }
+  
+  .subnav-content {
+    padding: 20px 0 ;
+    display: none;
+    background-color:  var(--black);
+  }
+  
+  .subnav-content a {
+      color: white;
+  }
+}
+
+@media (max-width: 1400px) {
+  .nav{
+    width: fit-content;
+    width: 100%;
+    height: 100%;
+  }
 }
 
