@@ -2065,6 +2065,7 @@ color: black;
 }
 
 #emailCapture p {
+  font-family: 'Georgia', sans-serif;
   margin-bottom: 10px;
   font-size: 20px;
   font-weight: bold;
