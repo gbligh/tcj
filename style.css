@@ -2050,3 +2050,114 @@ color: black;
   }
 }
 
+
+.emailCollect {
+  padding-left: 10%;
+}
+
+#emailCapture {
+  position: absolute;
+  right: 10%; 
+  top: 35%;
+  text-align: center;
+  max-width: 300px;
+}
+
+#emailCapture p {
+  margin-bottom: 10px;
+  font-size: 20px;
+  font-weight: bold;
+  color: black;
+  text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+}
+
+#indexImagetest {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  height: auto; 
+  min-height: 650px;
+}
+
+/* Desktop styles */
+@media (min-width: 769px) {
+  #indexImagetest {
+    background-image: url('photos/Hero\ image.jpg');
+    padding-top: 60px;
+    margin-top: 88px;
+  }
+
+  #mainContent {
+    display: flex;
+    flex-direction: column; 
+  }
+
+  #indexImagetest {
+    order: 1; 
+  }
+
+  #emailCapture {
+    order: 1; 
+  }
+
+  #welcomeSection {
+    order: 2;
+  }
+}
+
+/* Mobile styles */
+@media (max-width: 768px) {
+  #indexImagetest {
+    background-image: url('photos/Mobile\ Hero\ Image.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  #mainContent {
+    display: flex;
+    flex-direction: column; 
+  }
+
+  #emailCapture {
+    position: relative;
+    right: auto;
+    top: auto;
+    margin: 0 auto; 
+    max-width: 100%;
+    padding-top: 110px; 
+    order: 1;
+  }
+
+  #indexImagetest {
+    order: 2; 
+  }
+
+  #welcomeSection {
+    order: 3;
+  }
+}
+
+#welcomeSection {
+  background-color: gold;
+}
+
+#welcomeSection {
+  background-color: gold;
+  padding: 60px 20px; /* 60px top-bottom padding and 20px left-right padding */
+  color: #333; /* dark grey */
+  font-size: 24px; /* bigger font size */
+  line-height: 1.8; /* increased line-height for better readability */
+  border: 2px solid #333; /* dark grey border */
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* subtle shadow */
+  font-family: 'Roboto', sans-serif; /* example of a custom font, make sure to link it in your HTML */
+}
+
+@media (min-width: 769px) {
+  #welcomeSection {
+    padding: 60 20px; /* 120px top-bottom padding and 20px left-right padding for desktop */
+  }
+}
+
+
+
