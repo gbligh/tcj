@@ -2142,13 +2142,9 @@ color: black;
 
 #welcomeSection {
   background-color: #dba11d;
-}
-
-#welcomeSection {
-  background-color: #dba11d;
-  padding: 60px 20px; /* 60px top-bottom padding and 20px left-right padding */
+  padding: 30px 20px; /* slightly smaller padding on all screens */
   color: #333; /* dark grey */
-  font-size: 26px; /* bigger font size */
+  font-size: 18px; /* slightly smaller font size on all screens */
   line-height: 1.8; /* increased line-height for better readability */
   border: 2px solid #333; /* dark grey border */
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* subtle shadow */
@@ -2156,19 +2152,30 @@ color: black;
 }
 
 #welcomeSection h1 {
-  font-size: 24px; /* Larger font size for the header */
+  font-size: 1.5em; /* adjust the h1 size relative to the base font size */
   margin-bottom: 20px; /* Add some space below the header */
   text-align: center; /* Center align the text */
   font-weight: bold;
 }
 
-@media (min-width: 769px) {
+@media (max-width: 768px) {
   #welcomeSection {
-    padding: 60 20px; /* 120px top-bottom padding and 20px left-right padding for desktop */
+    padding: 15px 20px; /* much smaller padding on mobile */
+    font-size: 14px; /* much smaller font size on mobile */
   }
 
   #welcomeSection h1 {
-    font-size: 36px; /* Even larger font size for desktop */
+    font-size: 1.3em; /* adjust the h1 size relative to the base font size on mobile */
+  }
+}
+
+@media (min-width: 769px) {
+  #welcomeSection {
+    padding: 30px 20px; /* 30px top-bottom padding and 20px left-right padding for desktop */
+  }
+
+  #welcomeSection h1 {
+    font-size: 1.5em; /* Same font size for desktop */
   }
 }
 
