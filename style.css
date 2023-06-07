@@ -69,7 +69,7 @@ height: 80px;
 width: 100%;
 height: 100%;
 position: fixed;
-background-color: var(--gray);
+background-color: #4e7180;
 overflow: hidden;
 }
 
@@ -80,7 +80,7 @@ color: var(--black);
 font-family: 'Georgia', sans-serif;
 }
 .menu a:hover{
-background-color: var(--gray);
+background-color: #dba11d;
 }
 .nav{
 max-height: 0;
