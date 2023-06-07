@@ -77,6 +77,7 @@ overflow: hidden;
 display: block;
 padding: 30px 15px;
 color: var(--black);
+font-family: 'Georgia', sans-serif;
 }
 .menu a:hover{
 background-color: var(--gray);
