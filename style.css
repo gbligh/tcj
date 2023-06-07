@@ -666,6 +666,7 @@ background-color: rgb(236, 236, 236);
   font-weight: bold;
   padding-bottom: 30px;
   padding-top: 28px;
+  font-family: 'Georgia', sans-serif;
 }
   
 .button-6 {
@@ -1055,6 +1056,7 @@ grid-column-end: 4;
   font-weight: bold;
   padding-bottom: 30px;
   padding-top: 28px;
+  font-family: 'Georgia', sans-serif;
 }
   
 .button-6 {
@@ -1874,6 +1876,7 @@ grid-row-end: 6;
   
   .hometoolHeader, .hometoolFooter {
     color: black;
+    font-family: 'Georgia', sans-serif;
   }
 
 
