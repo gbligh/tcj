@@ -161,7 +161,7 @@ transition: all linear 0.3s;
 }	
 
 .rowOne {
-  color: brown;
+  color: #4e7180;
   text-align: center;
   padding-top: 200px;
   padding-bottom: 15px;
@@ -686,7 +686,7 @@ display: none;
 }
 
 .rowOne {
-  color: brown;
+  color: #4e7180;
   text-align: center;
   padding-top: 130px;
   padding-bottom: 15px;
@@ -1115,7 +1115,7 @@ grid-column-end: 4;
 
 /* Style The Dropdown Button */
 .dropbtn {
-background-color: brown;
+background-color: #4e7180;
 background-image: url("https://www.transparenttextures.com/patterns/bedge-grunge.png");
 color: white;
 padding: 16px;
@@ -1158,7 +1158,7 @@ display: block;
 
 /* Change the background color of the dropdown button when the dropdown content is shown */
 .dropdown:hover .dropbtn {
-background-color: rgb(109, 29, 29);
+background-color: #4e7180cb;
 }
 
 .tableTitle {
