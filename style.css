@@ -2143,7 +2143,7 @@ color: black;
 }
 
 #welcomeSection {
-  background-color: gold;
+  background-color: #dba11d;
   padding: 60px 20px; /* 60px top-bottom padding and 20px left-right padding */
   color: #333; /* dark grey */
   font-size: 24px; /* bigger font size */
