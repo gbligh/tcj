@@ -2182,6 +2182,19 @@ color: black;
   }
 }
 
+.footer__addr {
+  display: flex;
+  align-items: center; /* To center image and text vertically */
+  margin-right: 1.25em;
+  margin-bottom: 2em;
+}
+
+.footer__img {
+  height: 120.96px; /* Adjust size as needed */
+  width: 161.28px; /* Adjust size as needed */
+  margin-right: 15px; /* Some space between image and text */
+}
+
  /* CSS */
  .discordButton {
   appearance: none;
