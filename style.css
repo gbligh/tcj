@@ -2270,3 +2270,66 @@ color: black;
   }
 }
 
+
+#referPage {
+  background-color: #4e7180;
+  color: #dba11d;
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  padding: 20px;
+}
+
+.title {
+  text-align: center;
+  color: #dba11d;
+}
+
+.intro {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.card {
+  background-color: #dba11d;
+  margin-bottom: 20px;
+  padding: 20px;
+  border-radius: 5px;
+  color: #4e7180;
+}
+
+.card h2 {
+  margin-top: 0;
+}
+
+.btn {
+  display: block;
+  color: #4e7180;
+  text-decoration: none;
+  background-color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  margin: 10px auto 0;
+}
+
+.btn:hover {
+  background-color: #ccc;
+}
+
+.container {
+  margin-top: 100px;
+  /* ...other styles */
+}
+
+.title {
+  margin-bottom: 15px;
+  /* ...other styles */
+}
+
