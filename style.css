@@ -2333,3 +2333,30 @@ color: black;
   /* ...other styles */
 }
 
+body.refer {
+  background-color: #4e7180;
+  color: #333;
+  font-family: 'Georgia', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.home-button {
+  text-align: center;
+  margin-bottom: 30px;
+  display: block; /* this rule ensures the button is a block-level element */
+}
+
+.home-button button {
+  display: block; /* this rule ensures the button is a block-level element */
+  margin: 0 auto; /* this rule centers the button */
+  background-color: #dba11d;
+  color: #333;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-family: 'Georgia', sans-serif;
+  font-size: 18px;
+}
