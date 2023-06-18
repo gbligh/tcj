@@ -2330,6 +2330,8 @@ color: black;
 
 .title {
   margin-bottom: 15px;
+  color: #dba11d;
+  padding-top: 20px;
   /* ...other styles */
 }
 
