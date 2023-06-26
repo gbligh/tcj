@@ -2303,10 +2303,19 @@ color: black;
   padding: 20px;
   border-radius: 5px;
   color: #4e7180;
+  width: 100%; 
+  box-sizing: border-box;
 }
 
 .card h2 {
   margin-top: 0;
+}
+
+@media screen and (min-width: 768px) {
+  .card {
+    width: 50%; 
+    margin: 0 auto 20px; 
+  }
 }
 
 .btn {
