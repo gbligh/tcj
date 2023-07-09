@@ -2081,15 +2081,15 @@ color: black;
   background-repeat: no-repeat;
   background-size: 100% auto;
   height: auto; 
-  min-height: 650px;
 }
 
 /* Desktop styles */
 @media (min-width: 769px) {
   #indexImagetest {
-    background-image: url('photos/Heroimageupdated.jpg');
+    background-image: url('photos/NewWebBannerJuly.png');
     padding-top: 60px;
     margin-top: 88px;
+    min-height: 1200px;
   }
 
   #mainContent {
@@ -2117,6 +2117,7 @@ color: black;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    min-height: 650px;
   }
 
   #mainContent {
