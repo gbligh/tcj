@@ -2107,6 +2107,7 @@ color: black;
 
   #welcomeSection {
     order: 2;
+    display: none;
   }
 }
 
