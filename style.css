@@ -2374,3 +2374,243 @@ body.refer {
   font-family: 'Georgia', sans-serif;
   font-size: 18px;
 }
+
+
+.infoContainerSpecial {
+  width: 20vw;
+  height: 250px;
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr; /* added an extra fraction for discordBottom */
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.discordBottomSpecial {
+  background-color: none;
+  text-align: center;
+  grid-column-start: 1;
+  grid-column-end: 5;
+  grid-row-start: 6; /* setting this to the last row */
+}
+
+.infoIconSpecial {
+  background-color: none;
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 1;
+  grid-row-end: 3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.infoTitleSpecial {
+  background-color: none;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  grid-column-start: 2;
+  grid-column-end: 5;
+  grid-row-start: 1;
+  grid-row-end: 3;
+}
+
+.infoParagraphSpecial {
+  background-color: none;
+  text-align: center;
+  grid-column-start: 1;
+  grid-column-end: 5;
+  grid-row-start: 3;
+  grid-row-end: 5; /* reduced this from 6 to 5 */
+}
+
+@media (min-width: 768px) { 
+  .infoContainerSpecial {
+      width: 20vw;
+      height: 250px;
+      display: grid;
+      grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      padding-left: 10px;
+      padding-right: 10px;
+  }
+
+  .infoLargecontainerSpecial {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+      padding-bottom: 40px;
+  } 
+}
+
+.discordBottomSpecial {
+  background-color: #dba11d;
+  border: none; /* Removes the default border */
+  border-radius: 8px;
+  padding: 10px;
+  text-align: center;
+  transition: all 0.3s ease;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  color: #ffffff; /* Text color. Change it as needed */
+}
+
+.discordBottomSpecial:hover {
+  background-color: #c4901f; /* Darker shade of original color for hover effect */
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.4); /* Larger shadow for hover effect */
+}
+
+.discordBottomSpecial:active {
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.2); /* Resets shadow to default when button is clicked */
+}
+
+.discordBottomHide {
+  background-color: none;
+  text-align: center;
+  grid-column-start: 1;
+  grid-column-end: 5;
+  grid-row-start: 6; /* setting this to the last row */
+}
+
+.discordBottomHide {
+  background-color: #dba11d;
+  border: none; /* Removes the default border */
+  border-radius: 8px;
+  padding: 10px;
+  text-align: center;
+  transition: all 0.3s ease;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.2);
+  color: #ffffff; /* Text color. Change it as needed */
+  opacity: 0%;
+}
+
+@media (max-width: 768px) {
+  .discordButtonMobile {
+    appearance: none;
+    backface-visibility: hidden;
+    background-color: #4e7180;
+    border-radius: 10px;
+    border-style: none;
+    box-shadow: none;
+    box-sizing: border-box;
+    color: #fff;
+    cursor: pointer;
+    display: flex;  /* Making it a flex container */
+    justify-content: center;  /* Centering the content */
+    align-items: center;  /* Aligning the items vertically */
+    font-family: Inter,-apple-system,system-ui,"Segoe UI",Helvetica,Arial,sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+    height: 50px;
+    width: 200px;
+    letter-spacing: normal;
+    line-height: 1.5;
+    outline: none;
+    overflow: hidden;
+    padding: 14px 30px;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    transform: translate3d(0, 0, 0);
+    transition: all .3s;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    vertical-align: top;
+    white-space: nowrap;
+    gap: 10px;  /* Space between icon and text */
+    margin-top: 10px;  /* Space above the button on mobile */
+    margin-bottom: 10px;
+  }
+  
+  .discordButtonMobile:hover {
+    background-color: #dba21dc6;
+    box-shadow: rgba(0, 0, 0, .05) 0 5px 30px, rgba(0, 0, 0, .05) 0 1px 4px;
+    opacity: 1;
+    transform: translateY(0);
+    transition-duration: .35s;
+  }
+  
+  .discordButtonMobile:hover:after {
+    opacity: .5;
+  }
+  
+  .discordButtonMobile:active {
+    box-shadow: rgba(0, 0, 0, .1) 0 3px 6px 0, rgba(0, 0, 0, .1) 0 0 10px 0, rgba(0, 0, 0, .1) 0 1px 4px -1px;
+    transform: translateY(2px);
+    transition-duration: .35s;
+  }
+  
+  .discordButtonMobile:active:after {
+    opacity: 1;
+  }
+}
+
+@media (min-width: 768px) {
+  .discordButtonMobile {
+    display: none;
+  }
+}
+
+.discordButtonContainer {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+@media (min-width: 768px) {
+  
+  .rowOnesim {
+    color: #4e7180;
+    text-align: center;
+    padding-top: 200px;
+    padding-bottom: 15px;
+    font-size: 22px;
+  }
+  
+  .rowTwosim {
+    color: black;
+    text-align: center;
+    font-size: 50px;
+    font-weight: bold;
+    padding-bottom: 15px;
+  }
+  
+  .rowThreesim {
+    text-align: center;
+    font-size: 22px;
+    padding-left: 230px;
+    padding-right: 230px;
+    padding-bottom: 30px;
+  }
+}
+
+@media (max-width: 768px) {
+
+  table td.del {
+    display: none;
+    }
+  
+  .rowOnesim {
+    color: #4e7180;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 15px;
+    font-size: 18px;
+  }
+  
+  .rowTwosim {
+    color: black;
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    padding-bottom: 15px;
+  }
+  
+  .rowThreesim {
+    text-align: center;
+    font-size: 22px;
+    padding-bottom: 20px;
+    font-size: 14px;
+  }
+}
