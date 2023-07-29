@@ -2157,6 +2157,10 @@ color: black;
     margin-right: auto;
     margin-top: 100px;
   }
+
+  .desktop_img {
+    display: none;
+  }
 }
 
 #welcomeSection {
@@ -2626,4 +2630,8 @@ body.refer {
     padding-bottom: 20px;
     font-size: 14px;
   }
+}
+
+.desktop_img {
+  padding-top: 100px;
 }
