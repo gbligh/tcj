@@ -2635,3 +2635,9 @@ body.refer {
 .desktop_img {
   padding-top: 100px;
 }
+
+.translucentBackground {
+  background-color: rgba(255, 255, 255, 0.6); /* white with 50% opacity */
+  padding: 15px; /* padding around the text */
+  border-radius: 10px; /* rounded corners */
+}
