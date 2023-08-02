@@ -4,13 +4,12 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>The Canadian Jetsetter</title>
+  <title>The Canadian Jetsetter - Web</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,700;1,400&family=Roboto+Mono:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
-  <script id="mcjs">!function(c,h,i,m,p){m=c.createElement(h),p=c.getElementsByTagName(h)[0],m.async=1,m.src=i,p.parentNode.insertBefore(m,p)}(document,"script","https://chimpstatic.com/mcjs-connected/js/users/6cf3ae99174e152c6c905c46e/77edac3904b0477a2dbe691c4.js");</script>
 </head>
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-56V8CGNZFV"></script>
@@ -23,156 +22,97 @@
 </script>
 <body>
     <!-- Navigation bar -->
-  <header class="header">
-  <!-- Logo -->
-  <a href="index.html" class="logo"><img class="logoImage" src="photos/Banner logo New.png"></a>
-  <!-- Hamburger icon -->
-  <input class="side-menu" type="checkbox" id="side-menu"/>
-  <label class="hamb" for="side-menu"><span class="hamb-line"></span></label>
-  <!-- Menu -->
-  <nav class="nav">
-      <ul class="menu">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="credit-card-links.html">Credit Card Links</a> </li>
-          <li><a href="esim-search.html">eSIM Search Tool</a></li>
-          <li><a href="credit-card-spend-optimizer.html">Credit Card Spend Optimizer</a></li>
-          <li><a href="aeroplan-partner-booking-dates.html">Aeroplan Partner Award Tool</a></li>
-      </ul>
-  </nav>
-</header>
-  
+    <header class="header">
+      <!-- Logo -->
+      <a href="index.html" class="logo"><img class="logoImage" src="photos/Banner logo New.png"></a>
+      <!-- Hamburger icon -->
+      <input class="side-menu" type="checkbox" id="side-menu"/>
+      <label class="hamb" for="side-menu"><span class="hamb-line"></span></label>
+      <!-- Menu -->
+      <nav class="nav">
+          <ul class="menu">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="credit-card-links.html">Credit Card Links</a> </li>
+              <li><a href="esim-search.html">eSIM Search Tool</a></li>
+              <li><a href="credit-card-spend-optimizer.html">Credit Card Spend Optimizer</a></li>
+          </ul>
+      </nav>
+    </header>
+
     <div id="mainContent">
-        <div id="emailCapture">
-        <p>Subscribe for early access to flight deals, travel hacks, credit card points and more!</p>
+
+    <img src="photos/CollageBanner.png" alt="Suitcase" class="mobile__img">
+
+    <img src="photos/Herobannerslim.png" alt="Suitcase" class="desktop_img">
+
+      <div id="emailCapture">
+      <div class="translucentBackground">
+          <p>Subscribe for early access to flight deals, travel hacks, credit card points and more!</p>
+      </div>
         <iframe src="https://embeds.beehiiv.com/cf928f6f-5523-489b-b125-b1effe279beb?slim=true" data-test-id="beehiiv-embed" height="52" frameborder="0" scrolling="no" style="margin: 0; border-radius: 0px !important; background-color: transparent;"></iframe>
 
-        <div id="discordButtonContainer">
-            <button class="discordButton" role="button" onclick=" window.open('https://discord.gg/jxXk2mvR','_blank')">Join Discord</button>
+        <div class="discordButtonContainer">
+            
+            <button class="discordButtonMobile" role="button" onclick=" window.open('credit-card-links.html','_blank')"> <div class="infoIconMobile"><i class="fa-solid fa-money-bill fa-2xl"></i></div> Credit Card Links</button>
         </div>
+
+        <div class="discordButtonContainer">
+            <button class="discordButtonMobile" role="button" onclick=" window.open('https://www.chexy.co/?utm_source=jetsetter&utm_medium=influencer&utm_campaign=2023_july','_blank')"><div class="infoIconMobile"><i class="fa-solid fa-money-check-dollar fa-2xl"></i></div>Try Chexy</button>
+        </div>
+
+        <div class="discordButtonContainer">
+            <button class="discordButtonMobile" role="button" onclick=" window.open('esim-search.html','_blank')"><div class="infoIconMobile"><i class="fa-solid fa-mobile-screen fa-2xl"></i></div>eSim Search</button>
         </div>
         
-        <div id="indexImagetest"></div>
-        <div id="welcomeSection">
-            <h1>Welcome, savvy travellers!</h1>
-            <p>This page is your go-to destination for all the best travel deals, points hacks, and thrifty tips. Don't just watch the planes, come fly with us by subscribing to our newsletter and joining our Discord group. Get the inside scoop before anyone else, and start turning your travel dreams into reality.</p>
+        <div class="discordButtonContainer">
+            <button class="discordButtonMobile" role="button" onclick=" window.open('https://discord.gg/jxXk2mvR','_blank')"><div class="infoIconMobile"><i class="fa-brands fa-discord fa-2xl"></i></div>Join Discord</button>
         </div>
-    </div>
-
-    <div class="homeTitle">Available Tools:</div>
-
-    <div class="homeContainer">
-      <div class="homeToolone">
-        <a href="apmr.html">
-          <div class="hometoolHeader">
-            Credit Card Comparison Table
-          </div>
-
-          <div class="homeimageoneHolder">
-            <img class="homeImageone" src="photos/Comparison.png">
-          </div>
-
-          <div class="hometoolFooter">
-            Find out which credit cards give the biggest bonuses for the lowest minimum spend.
-          </div>
-        </a>
+        </div>
+      
+      <div id="welcomeSection">
+        <h1>Welcome, savvy travellers!</h1>
+        <p>This page is your go-to destination for all the best travel deals, points hacks, and thrifty tips. Don't just watch the planes, come fly with us by subscribing to our newsletter and joining our Discord group. Get the inside scoop before anyone else, and start turning your travel dreams into reality.</p>
       </div>
 
-      <div class="homeToolone">
-        <a href="american-express-platinum.html">
-          <div class="hometoolHeader">
-            Credit Card Benefit List
-          </div>
-          <div class="homeimageoneHolder">
-            <img class="homeImageone" src="photos/List.png">
-          </div>
-          <div class="hometoolFooter">
-            Check out a clear and detailed list of what benefits come with each credit card.
-          </div>
-        </a>
-      </div>
-    </div>
+    </div>    
 
-    <div class="homeContainer">
-      <div class="homeToolone">
-        <a href="credit-card-suggestion-quiz-canada.html">
-          <div class="hometoolHeader">
-            Credit Card Finder
-          </div>
+    <div id="toolSection">
+        <div class="infoLargecontainerSpecial">
+            <div class="infoContainerSpecial">
+                <div class="infoIconSpecial"><i class="fa-solid fa-money-bill fa-2xl"></i></div>
+                <div class="infoTitleSpecial">Credit Card Links</div>
+                <div class="infoParagraphSpecial">"Unlock the potential of travel rewards! Explore all the credit card links I mention in one convenient place.</div>
+                <button class="discordBottomSpecial" role="button" onclick=" window.open('credit-card-links.html','_blank')">View Cards</button>
+            </div>
+        
+            <div class="infoContainerSpecial">
+                <div class="infoIconSpecial"><i class="fa-solid fa-money-check-dollar fa-2xl"></i></div>
+                <div class="infoTitleSpecial">Try Chexy</div>
+                <div class="infoParagraphSpecial">"Ever dreamt of your rent paying for a vacation? With Chexy, you can! It's like having a magic carpet... for your wallet.</div>
+                <button class="discordBottomSpecial" role="button" onclick=" window.open('https://www.chexy.co/?utm_source=jetsetter&utm_medium=influencer&utm_campaign=2023_july','_blank')">Try Chexy</button>
+            </div>
+        
+            <div class="infoContainerSpecial">
+                <div class="infoIconSpecial"><i class="fa-solid fa-mobile-screen fa-2xl"></i></div>
+                <div class="infoTitleSpecial">eSim Search</div>
+                <div class="infoParagraphSpecial"> Don't let the cell companies pinch more money out of your pocket! Use our eSim search to find the most affordable option when travelling.</div>
+                <button class="discordBottomSpecial" role="button" onclick=" window.open('esim-search.html','_blank')">eSim Search</button>
+            </div>
 
-          <div class="homeimageoneHolder">
-            <img class="homeImageone" src="photos/Quiz.png">
-          </div>
-
-          <div class="hometoolFooter">
-            Five questions to determine the best credit card offer for you.
-          </div>
-        </a>
-      </div>
-
-      <div class="homeToolone">
-        <a href="credit-card-spend-optimizer.html">
-          <div class="hometoolHeader">
-            Credit Card Spend Optimizer
-          </div>
-          <div class="homeimageoneHolder">
-            <img class="homeImageone" src="photos/Optimizer.png">
-          </div>
-          <div class="hometoolFooter">
-            Find out what cards give you the most points back.
-          </div>
-        </a>
-      </div>
-    </div>
-
-   <h1 class="title">Canadian Travel Credit Card Portfolio 2023 ✈️</h1>
-    <p class="intro">By using the referral links below, you'll not only get the best offers available, but you'll also be supporting our content. Thank you so much! This is NOT financial advice.</p>
-    
-    <div class="card">
-      <h2>American Express Cobalt</h2>
-      <p class="note">This is it! The best Travel card in Canada. Incredible earn rate on a bunch of categories. I linked you below to Great Canadian Rebates. If you apply for the card through there you can get an extra $100 back from them. The site looks old but it's legit!</p>
-      <a class="btn" href="https://www.greatcanadianrebates.ca/register.php?r=287293&p=Amex-Cobalt">Use my Referral Link (Thanks &#x1F64F;)</a>
-    </div>  
-
-     <div class="card">
-      <h2>American Express Platinum</h2>
-      <p class="note">The one travel card to rule them all. I love this for lounge access, a huge point bonus, and extra cash back perks. Send me a DM or email if you get this card and want bonus tips. I linked you below to Great Canadian Rebates. If you apply for the card through there you can get an extra $150 back from them. The site looks old but it's legit!</p>
-      <a class="btn" href="https://www.greatcanadianrebates.ca/register.php?r=287293&p=Amex-ThePlatinumCard">Use my Referral Link (Thanks &#x1F64F;)</a>
-     </div>
-    
-    <div class="card">
-        <h2>American Express Aeroplan</h2>
-        <p class="note">This is Canadian Jetsetter team member Alexandra's link as I don't have this card so I can't refer it! She is helping with editing and content ideas.</p>
-        <a class="btn" href="https://americanexpress.com/en-ca/referral/aLEXaSSqBZ?XL=MIANS">Use my Referral Link (Thanks &#x1F64F;)</a>
-    </div>
-
-     <div class="card">
-       <h2>Scotiabank Passport Visa Infinite</h2>
-       <p class="note">An awesome card to use when actually travelling for no FX fees and lounge access! I linked you below to Great Canadian Rebates. If you apply for the card through there you can get an extra $150 back from them. The site looks old but it's legit</p>
-       <a class="btn" href="https://www.greatcanadianrebates.ca/register.php?r=287293&p=Scotiabank-Passport-Infinite">Use my Referral Link (Thanks &#x1F64F;)</a>
-    </div>
-
-    <div class="card">
-        <h2>RBC Avion Visa Platinum</h2>
-        <p class="note">This card has a generous welcome offer that does not require any spending. I would use this card as a back-up to higher earning cards.</p>
-        <a class="btn" href="https://www.rbcroyalbank.com/credit-cards/avion.html">Link (No Referral) - come on RBC get with the times!</a>
-    </div>
-
-    <div class="card">
-     <h2>HSBC World Elite Mastercard</h2>
-     <p class="note">This is a good travel mastercard for those who don't fly Westjet. I linked you below to Great Canadian Rebates. If you apply for the card through there you can get an extra $150 back from them. The site looks old but it's legit!</p>
-     <a class="btn" href="https://www.greatcanadianrebates.ca/register.php?r=287293&p=HSBC-World-Elite">Use my Referral Link (Thanks &#x1F64F;)!</a>
-    </div>
-  
-    <div class="card">
-      <h2>RBC Westjet World Elite Mastercard</h2>
-      <p class="note">I am mostly happy with this card. Good for free checked bags and the welcome WestJet Dollars. The companion voucher is not as good as it seems (SO MANY FEES WTF WESTJET)</p>
-      <a class="btn" href="https://www.westjet.com/en-ca/rewards/credit-cards">Link (No Referral) - come on RBC get with the times!</a>
-    </div>
-
-      <div class="card">
-      <h2>Download the Airalo eSim app</h2>
-      <p class="note">Try out Airalo on your next trip out of country instead of giving your evil Canadian Telco more money!</p>
-      <a class="btn" href="https://airalo.tp.st/fKsp2gLf">Use my Referral Link {Thanks &#x1F64F;)</a>
+            <div class="infoContainerSpecial">
+                <div class="infoIconSpecial"><i class="fa-brands fa-discord fa-2xl"></i></div>
+                <div class="infoTitleSpecial">Join Discord</div>
+                <div class="infoParagraphSpecial">Uncover the secrets of savvy Canadian travelers! Join our Discord community and embark on your next travel-hacking adventure!</div>
+                <button class="discordBottomSpecial" role="button" onclick=" window.open('https://discord.gg/jxXk2mvR','_blank')">Join Discord</button>
+            </div>
+        
+            <div class="infoContainerSpecial">
+                <div class="infoIconSpecial"><i class="fa-solid fa-circle-exclamation fa-2xl"></i></div>
+                <div class="infoTitleSpecial">Not Financial Advice</div>
+                <div class="infoParagraphSpecial">Reminder: While we share awesome travel hacks, we don't offer financial advice. Always research and make informed decisions on your own.</div>
+                <button class="discordBottomHide" role="button" onclick=" window.open('','_blank')">I Understand</button>
+            </div>
+        </div>
     </div>
   
     <footer class="footer">
@@ -217,7 +157,6 @@
         <p>&copy; 2023. All rights reserved.</p>
       </div>
     </footer>
-
   
 </body>
 </html>
