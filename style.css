@@ -2641,3 +2641,121 @@ body.refer {
   padding: 15px; /* padding around the text */
   border-radius: 10px; /* rounded corners */
 }
+
+
+.credit-card-offer {
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  width: 100%;  /* Adjusted to full width */
+  max-width: 420px;  /* To ensure it doesn't become too wide */
+  padding: 15px;
+  background-color: rgba(255,255,255,0.8);
+  margin: 20px auto;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card-name {
+  font-size: 20px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 10px;  /* A bit of spacing for clarity */
+}
+
+.card-image {
+  width: 100%;
+  max-width: 250px;  /* You can adjust based on the actual size of your images */
+  margin: 10px 0;
+  border-radius: 10px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.card-details {
+  margin-bottom: 10px;  /* Added spacing between card details and button */
+}
+
+.card-info {
+  font-size: 15px;
+  color: #444;
+  margin-bottom: 8px;  /* Added for a bit of space between each info line */
+}
+
+.apply-button {
+  appearance: none;
+  border: none;
+  border-radius: 10px;
+  margin-top: 10px;
+  padding: 5px 20px;
+  width: 100%;  /* Button width adjusted for full width of container */
+  background-color: #4e7180;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.apply-button:hover {
+  background-color: #dba11d;
+}
+
+.green-text {
+  color: green;
+}
+
+/* Default styling for mobile: 1 card per row */
+.credit-card-offers-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px; /* This creates space between each grid item, adjust as needed */
+}
+
+/* Screen width of 600px and up: 2 cards per row */
+@media (min-width: 600px) {
+  .credit-card-offers-container {
+      grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Screen width of 900px and up: 3 cards per row */
+@media (min-width: 900px) {
+  .credit-card-offers-container {
+      grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.title-section {
+  background-color: #4e7180; /* This is a generic blue. Replace with the specific blue you've used previously if it's different */
+  padding: 20px 15px;
+  color: white; /* Setting white text color for better contrast against the blue background */
+  text-align: center; /* To center the text in the box */
+}
+
+.title-section h1 {
+  font-size: 24px; /* Adjust as needed */
+  margin-bottom: 10px;
+  font-weight: bold; /* Makes the title bold */
+}
+
+.title-section .support-text,
+.title-section .artwork-text {
+  font-size: 14px; /* Adjust as needed */
+  margin-top: 5px;
+  opacity: 0.9; /* Making it slightly translucent to give a hierarchy to the text */
+}
+
+/* You can also add a shadow to make the title section pop */
+.title-section {
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Default styles (for larger screens) */
+.mobile-only-view {
+  display: none;
+}
+
+/* Mobile view styles */
+@media (max-width: 768px) {
+  .mobile-only-view {
+      display: block;
+  }
+}
