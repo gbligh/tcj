@@ -2759,3 +2759,62 @@ body.refer {
       display: block;
   }
 }
+
+
+.terms-container {
+  max-width: 1000px;
+  margin: 100px auto;
+  padding: 20px;
+  background-color: rgba(255,255,255,0.8);
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#terms-container h1 {
+  font-size: 30px;
+  color: #4e7180; /* The blue color */
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+#terms-container h2 {
+  font-size: 24px;
+  color: #4e7180;
+  text-align: center;
+  margin-bottom: 20px;
+  border-bottom: 2px solid #4e7180;
+  padding-bottom: 10px;
+}
+
+#terms-container h3 {
+  font-size: 20px;
+  color: #4e7180;
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
+#terms-container p {
+  font-size: 16px;
+  color: #444;
+  line-height: 1.5;
+  text-align: justify;
+}
+
+@media (max-width: 768px) {
+  .terms-container {
+      margin: 100px 10px;
+  }
+
+  #terms-container h1 {
+      font-size: 24px;
+  }
+
+  #terms-container h2 {
+      font-size: 20px;
+  }
+
+  #terms-container h3 {
+      font-size: 18px;
+  }
+}
