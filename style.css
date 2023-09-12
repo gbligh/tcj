@@ -2818,3 +2818,29 @@ body.refer {
       font-size: 18px;
   }
 }
+
+.iframe-container {
+    position: relative;
+    display: inline-block;  /* Keeps the width of the container tight around the iframe */
+}
+
+.tooltip {
+    visibility: hidden;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    padding: 8px 12px;
+    border-radius: 6px;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%; /* Display the tooltip above the iframe */
+    left: 50%;
+    margin-left: -120px; /* Use half the width of your tooltip to center it */
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.iframe-container:hover .tooltip {
+    visibility: visible;
+    opacity: 1;
+}
