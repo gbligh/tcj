@@ -2844,3 +2844,12 @@ body.refer {
     visibility: visible;
     opacity: 1;
 }
+
+.custom-link {
+  color: #dba11d;
+}
+
+.custom-link:hover, 
+.custom-link:visited {
+  color: #dba11d; /* This ensures the link remains the same color even when hovered or after being visited */
+}
