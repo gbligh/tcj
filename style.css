@@ -1324,7 +1324,7 @@ height: 0px;
 display: none;
 }
 
-#tooltip, #tooltipFour, #tooltipFive, #tooltipSeven, #tooltipTable, #tooltipTablethree, #tooltipTablefour, #tooltipTablefive, #tooltipTableseven, #tooltipPoint {
+#tooltipFour, #tooltipFive, #tooltipSeven, #tooltipTable, #tooltipTablethree, #tooltipTablefour, #tooltipTablefive, #tooltipTableseven, #tooltipPoint {
 position: relative;
 cursor: pointer;
 }
