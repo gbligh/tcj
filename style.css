@@ -2853,3 +2853,78 @@ body.refer {
 .custom-link:visited {
   color: #dba11d; /* This ensures the link remains the same color even when hovered or after being visited */
 }
+
+.js-spotlight-section-top {
+  font-family: Arial, sans-serif;
+  margin-bottom: 30px;
+  padding-top: 100px;
+}
+
+.js-spotlight-section {
+  font-family: Arial, sans-serif;
+  margin-bottom: 30px;
+}
+
+.js-header {
+  font-size: 24px;
+  color: #333;
+  border-bottom: 2px solid #999;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+}
+
+.js-spotlight-section p {
+  font-size: 16px;
+  color: #555;
+  line-height: 1.6;
+}
+
+.js-spotlight-section-top p {
+  font-size: 16px;
+  color: #555;
+  line-height: 1.6;
+}
+
+.js-date-section {
+  background-color: #f4f4f4;
+  padding: 10px;
+  margin: 15px 0;
+  border-radius: 5px;
+}
+
+.date-list {
+  font-size: 14px;
+  margin-left: 20px;
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.date-list li {
+  display: inline-block;
+  padding: 2px 8px;
+  margin-right: 5px;
+  margin-bottom: 5px;
+  border: 1px solid #999;
+  border-radius: 4px;
+}
+
+.js-feedback-section {
+  background-color: #f2e5d7;
+  padding: 15px;
+  border-radius: 5px;
+}
+
+.js-feedback-header {
+  font-size: 20px;
+  color: #444;
+}
+
+.js-feedback-section p {
+  margin-top: 10px;
+  font-size: 16px;
+  color: #555;
+}
+
+.js-spotlight-section p, .js-spotlight-section-top p {
+  margin-bottom: 1.5em;  
+}
