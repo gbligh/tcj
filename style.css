@@ -390,6 +390,12 @@ table {
   text-align: center;
 }
 
+.titleTextalt {
+  padding-top: 100px;
+  font-family: 'Georgia', sans-serif;
+  text-align: center;
+}	
+
 .titleTexttwo {
   padding-bottom: 20px;
   text-align: center;
@@ -816,6 +822,12 @@ table {
 
 .titleText {
   padding-top: 20px;
+  text-align: center;
+}
+
+.titleTextalt {
+  padding-top: 100px;
+  font-family: 'Georgia', sans-serif;
   text-align: center;
 }
 
