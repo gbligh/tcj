@@ -2928,3 +2928,197 @@ body.refer {
 .js-spotlight-section p, .js-spotlight-section-top p {
   margin-bottom: 1.5em;  
 }
+
+.card-header {
+  background-color: #474848;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  font-family: 'Georgia', sans-serif;
+}
+
+.card-header h1 {
+  flex-basis: 100%;
+  margin: 0;
+  font-size: 2em;
+}
+
+.card-header div {
+  flex: 1;
+  margin: 10px;
+  min-width: 200px;
+}
+
+.card-header h2 {
+  color: #e7141f;
+  margin-bottom: 10px;
+}
+
+.card-header p {
+  margin: 5px 0;
+  font-size: 1.2em;
+}
+
+.card-header small {
+  display: block;
+  margin-top: 5px;
+  font-size: 0.8em;
+}
+
+@media screen and (max-width: 768px) {
+  .card-header {
+      flex-direction: column;
+  }
+
+  .card-header h1 {
+      font-size: 1.5em;
+  }
+
+  .card-header div {
+      margin: 10px 0;
+      min-width: auto;
+  }
+
+  .card-header h2 {
+      font-size: 1em;
+  }
+
+  .card-header p {
+      font-size: 1em;
+  }
+}
+
+.offer-container {
+  width: 80%;
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  font-family: 'Georgia', sans-serif;
+}
+
+.offer-container h1, .offer-container h2 {
+  color: #e7141f;
+}
+
+.offer-container ul {
+  list-style-type: disc;
+  margin-left: 20px;
+}
+
+.offer-container li {
+  margin-bottom: 10px;
+}
+
+@media screen and (max-width: 768px) {
+  .offer-container {
+      width: 95%;
+  }
+
+  .offer-container h1 {
+      font-size: 1.5em;
+  }
+
+  .offer-container h2 {
+      font-size: 1.2em;
+  }
+
+  .offer-container ul {
+      margin-left: 10px;
+  }
+
+  .offer-container li {
+      font-size: 0.9em;
+  }
+}
+
+.fees-conditions-container {
+  width: 80%;
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.fees-conditions-container h1 {
+  color: #e7141f;
+  text-align: center;
+  font-family: 'Georgia', sans-serif;
+}
+
+.fees-conditions-container .table-wrapper {
+  overflow-x: auto; /* Enables horizontal scrolling for smaller screens */
+}
+
+.fees-conditions-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  font-family: 'Georgia', sans-serif;
+}
+
+.fees-conditions-table, .fees-conditions-table th, .fees-conditions-table td {
+  border: 1px solid #ddd;
+}
+
+.fees-conditions-table th, .fees-conditions-table td {
+  text-align: left;
+  padding: 8px;
+}
+
+.fees-conditions-table th {
+  background-color: #e7141f;
+  color: white;
+}
+
+@media screen and (max-width: 768px) {
+  .fees-conditions-table, .fees-conditions-table th, .fees-conditions-table td {
+      font-size: 0.9em;
+  }
+}
+
+.legal-container {
+  width: 80%;
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  font-family: 'Georgia', sans-serif;
+}
+
+.legal-container h1 {
+  color: #e7141f; /* Highlight color */
+  text-align: center;
+}
+
+.legal-container p, .legal-container ul, .legal-container li {
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.legal-container ul {
+  list-style-type: disc;
+  margin-left: 20px;
+}
+
+@media screen and (max-width: 768px) {
+  .legal-container {
+      width: 95%;
+  }
+
+  .legal-container h1 {
+      font-size: 1.5em;
+  }
+
+  .legal-container p, .legal-container ul, .legal-container li {
+      font-size: 0.9em;
+  }
+}
