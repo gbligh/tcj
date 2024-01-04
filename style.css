@@ -3178,3 +3178,57 @@ body.refer {
       font-size: 0.9em;
   }
 }
+
+.welcome-section {
+  background-color: #ddedf4; /* Light background for the section */
+  padding: 20px;
+  text-align: center;
+  padding-top: 100px;
+}
+
+.welcome-content {
+  max-width: 800px; /* Maximum width */
+  margin: 0 auto; /* Centering */
+  padding: 15px;
+}
+
+.welcome-title {
+  color: #333333; /* Dark text color for contrast */
+  font-size: 2em; /* Larger font size for title */
+  margin-bottom: 15px;
+  font-family: 'Georgia', sans-serif;
+}
+
+.welcome-text {
+  color: #555555; /* Slightly lighter text color for the body */
+  font-size: 1.2em;
+  line-height: 1.6;
+  margin-bottom: 20px;
+  font-family: 'Georgia', sans-serif;
+}
+
+.welcome-gif {
+  max-width: 100%; /* Responsive gif size */
+  height: auto;
+  border: none;
+}
+
+@media (max-width: 768px) {
+  .welcome-title {
+      font-size: 1.5em; /* Smaller font size for mobile */
+  }
+
+  .welcome-gif {
+      width: 100%; /* Full width on mobile */
+  }
+}
+
+.welcome-text a {
+  text-decoration: underline; /* This will underline the text */
+  color: #007bff; /* Example link color, you can change this */
+}
+
+.welcome-text a:hover {
+  text-decoration: underline; /* Keeps the underline on hover for consistency */
+  color: #0056b3; /* Darker color on hover for interaction feedback */
+}
